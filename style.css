@@ -1,0 +1,106 @@
+html, body{
+    margin:0;
+    background:	#F0F8FF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.containerForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) minmax(50px, 1fr);	
+    grid-template-rows: auto;
+    grid-column-gap: 100px;
+    grid-row-gap: 20px;
+    padding: 50px;
+    -webkit-display: grid;
+    -webkit-grid-template-columns: repeat(2, 1fr) minmax(50px, 1fr);	
+    -webkit-grid-template-rows: auto;
+    -webkit-grid-column-gap: 100px;
+    -webkit-grid-row-gap: 20px;
+}
+
+.name{
+    grid-column: 1;
+    grid-row: 1;
+    -webkit-grid-column: 1;
+    -webkit-grid-row: 1;
+}
+
+.mail{
+    grid-column: 1;
+    grid-row: 2;
+    -webkit-grid-column: 1;
+    -webkit-grid-row: 2;
+}
+.topic{
+    grid-column: 1;
+    grid-row: 3;
+    -webkit-grid-column: 1;
+    -webkit-grid-row: 3;
+}
+.message{
+    grid-column: 2 / 2;
+    grid-row: 1 / 4;
+    -webkit-grid-column: 2 / 2;
+    -webkit-grid-row: 1 / 4;
+}
+.btn{
+    grid-column: 1;
+    grid-row: 4;
+    -webkit-grid-column: 1;
+    -webkit-grid-row: 4;
+}
+
+.containerForm input[type="button"],input[type="submit"]{
+    -webkit-transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    -ms-transition:0.5s all;
+}
+
+.containerForm input[type="text"]{
+    width: 100%;
+    color: #b20808;
+    margin: 0 0px 23px 0;
+    font-size:14px;
+    padding: 12px 10px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+}
+
+.containerForm textarea{
+    width: 100%;
+    color: #b20808;
+    font-size:14px;
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+    height: 185px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+}
+
+.containerForm input[type=submit] {
+    color: #ffffff;
+    padding: 13px 43px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    background:#b20808;
+    border:none;
+    outline:none;
+} 
+
+.containerForm input[type=submit]:hover {
+    background:#000;
+    color:#b20808;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;	
+    transform: rotateX(360deg);
+}
